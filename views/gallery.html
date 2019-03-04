@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>NICE LAB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+#container {
+width: 300px;
+background-color: #ffcc33;
+margin-left: 0px;
+}
+
+#first {
+float: left;
+}
+
+#second {
+float: right;
+}
+
+body{
+font-size: 20px;
+font-family: Georgia, serif;
+}
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color:#00477e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: #00477e;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="topnav" id="myTopnav">
+
+  <a href="home" class="w3-bar-item w3-button" style="margin-left: 4% ;text-decoration:none; font-family: Georgia,serif;">NISE LAB</a>
+  <a href="gallery" class="w3-bar-item w3-button" style="text-decoration:none; font-family: Georgia, serif;float:right; padding-right:5%">Gallery</a>
+  <a href="research" class="w3-bar-item w3-button" style="text-decoration:none; font-family: Georgia, serif;float:right">Publications</a>
+  <a href="project" class="w3-bar-item w3-button" style="text-decoration:none; font-family: Georgia, serif;float:right">Projects</a>
+  <a href="people" class="w3-bar-item w3-button" style="text-decoration:none; font-family: Georgia, serif;float:right">People</a>
+  <a href="home" class="w3-bar-item w3-button" style="text-decoration:none; font-family: Georgia, serif;float:right">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<br>
+
+<div class="container" >
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+
+<div class="item active">
+<img src="images/Michael.png" alt="Los Angeles" height="250" width="1600">
+<div class="carousel-caption">
+<h3>Seminar</h3>
+<p>Dr. Yue, Micheal and Dr. Wong</p>
+</div>
+</div>
+
+<div class="item">
+<img src="images/Sapan.png" alt="Chicago" height="250" width="1600">
+<div class="carousel-caption">
+<h3>Graduation</h3>
+<p>Sapan and Dr. Yue</p>
+</div>
+</div>
+
+<div class="item">
+<img src="images/Lijie.png" alt="New York" height="250" width="1600">
+<div class="carousel-caption">
+<h3>Graduation</h3>
+<p>Lijie and Dr. Yue</p>
+</div>
+</div>
+
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+
+<!-- About Section -->
+
+<div class="w3-container w3-padding-32" id="contact">
+<!-- End page content -->
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+<p style="font-family:Georgia ,serif ; font-size: 20px; padding-top: 3px;padding-right:16px;padding-bottom: 3px;padding-left: 16px;text-align: center;color: white;
+background-color: #00477e; /width: 100%;/ /height: 300px;/ /height: 100%;/ overflow: none;">Contact Us: Science 383, San Francisco State University, SF, CA 94132</p>
+</footer>
+
+</body>
+</html>

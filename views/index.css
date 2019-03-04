@@ -1,0 +1,30 @@
+#container {
+  width: 300px;
+  background-color: #ffcc33;
+  margin: auto;
+}
+
+#first {
+  float: left;
+}
+
+#second {
+  float: right;
+}
+
+.w3-top{
+  background-color: blue;
+}
+
+h2{
+  padding-left: 50px;
+}
+
+body{
+  font-size: 20px;
+  font-family: Georgia, serif;
+}
+
+.header{
+  font-family: Georgia, serif;
+}
